@@ -9,6 +9,10 @@ let readLines (filePath:string) = seq {
         yield sr.ReadLine ()
 }
 
+let readAll (filePath:string) =  
+    use sr = new StreamReader (filePath)
+    sr.ReadToEnd()
+
 let split (c:char) (s:string) = s.Split(c)
 
 let fst3 (a,_,_) = a
