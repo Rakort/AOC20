@@ -5,7 +5,7 @@ let main argv =
 
     let timer = System.Diagnostics.Stopwatch.StartNew()
 
-    Day7.run()
+    Day8.run()
 
     timer.Stop()
     printfn "elapsed=%O" <| timer.Elapsed
