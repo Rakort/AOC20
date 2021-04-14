@@ -50,7 +50,7 @@ let calc2 input =
 
 /// Запуск решения задачи
 let run() =
-    let data = readLines filePath|> Seq.map int64 |> Seq.toList
+    let data = readLines filePath |> Seq.map int64 |> Seq.toList
     calc data  |> printfn "%d"
     calc2 data |> printfn "%d"
 
@@ -81,8 +81,8 @@ let ``Day 9 Test`` () =
     Assert.Equal(findEncryptionWeakness data 127L, 62L)
     
 
-//[<Fact>]
-//let ``Day 9 Fact`` () =
-//    let data = readLines filePath
-//    Assert.Equal(calc data, 1584)
-//    Assert.Equal(calc2 data, 920)
+[<Fact>]
+let ``Day 9 Fact`` () =
+    let data = readLines filePath |> Seq.map int64 |> Seq.toList
+    Assert.Equal(calc data, 1309761972L)
+    Assert.Equal(calc2 data, 177989832L)
