@@ -75,16 +75,16 @@ let run() =
 [<Fact>]
 let ``Day 11 Test`` () =
     let data = [
-    "L.LL.LL.LL";
-    "LLLLLLL.LL";
-    "L.L.L..L..";
-    "LLLL.LL.LL";
-    "L.LL.LL.LL";
-    "L.LLLLL.LL";
-    "..L.L.....";
-    "LLLLLLLLLL";
-    "L.LLLLLL.L";
-    "L.LLLLL.LL"]    
+        "L.LL.LL.LL";
+        "LLLLLLL.LL";
+        "L.L.L..L..";
+        "LLLL.LL.LL";
+        "L.LL.LL.LL";
+        "L.LLLLL.LL";
+        "..L.L.....";
+        "LLLLLLLLLL";
+        "L.LLLLLL.L";
+        "L.LLLLL.LL"]    
     Assert.Equal(calc data, 37)
     Assert.Equal(calc2 data, 26) 
     0
